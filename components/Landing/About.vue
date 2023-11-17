@@ -1,9 +1,16 @@
 <template>
-  <section class="grid min-h-[80vh] grid-cols-7 items-center">
-    <div class="col-span-4">
+  <section
+    id="about"
+    class="grid min-h-[80vh] h-fit grid-cols-1 md:grid-cols-7 items-center md:mt-auto mt-5"
+  >
+    <div class="col-span-1 md:col-span-4">
       <div class="pb-3 mb-5 animated_underline">
-        <h5 class="text-xl font-bold uppercase text-primary-600">About Us</h5>
-        <h1 class="mt-3 mb-0 text-4xl font-extrabold text-midnight-950">
+        <h5 class="text-lg font-bold uppercase sm:text-xl text-primary-600">
+          About Us
+        </h5>
+        <h1
+          class="mt-3 mb-0 text-2xl font-extrabold sm:text-3xl md:text-4xl text-midnight-950"
+        >
           The Best IT Solution For Your <br />
           Business
         </h1>
@@ -18,14 +25,14 @@
       </p>
       <div class="grid grid-cols-2 mb-3">
         <div class="col-sm-6 wow zoomIn">
-          <h5 class="mb-3 text-lg font-[500] gap-x-3">
+          <h5 class="mb-3 text-base sm:text-lg font-[500] gap-x-3">
             <Icon
               name="ic:round-check"
               class="text-2xl font-extrabold text-primary-600"
             />
             Reliable Service
           </h5>
-          <h5 class="mb-3 text-lg font-[500] gap-x-3">
+          <h5 class="mb-3 text-base sm:text-lg font-[500] gap-x-3">
             <Icon
               name="ic:round-check"
               class="text-2xl font-extrabold text-primary-600"
@@ -34,14 +41,14 @@
           </h5>
         </div>
         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
-          <h5 class="mb-3 text-lg font-[500] gap-x-3">
+          <h5 class="mb-3 text-base sm:text-lg font-[500] gap-x-3">
             <Icon
               name="ic:round-check"
               class="text-2xl font-extrabold text-primary-600"
             />
             24/7 Support
           </h5>
-          <h5 class="mb-3 text-lg font-[500] gap-x-3">
+          <h5 class="mb-3 text-base sm:text-lg font-[500] gap-x-3">
             <Icon
               name="ic:round-check"
               class="text-2xl font-extrabold text-primary-600"
@@ -63,7 +70,7 @@
           </h4>
         </div>
       </div>
-      <div class="mt-10">
+      <div class="mt-5 md:mt-10">
         <nuxt-link
           href="quote.html"
           class="px-5 py-3 text-white rounded bg-primary-600 zoomIn"
@@ -71,10 +78,11 @@
         >
       </div>
     </div>
-    <div class="col-span-3">
+    <div class="col-span-1 md:col-span-3">
       <nuxt-img
         src="/img/about us.jpg"
-        class="object-contain w-full h-full :animate-zoomIn"
+        class="object-contain w-full mt-5 md:mt-auto"
+        alt="About Ahava Digital Solutions"
       />
     </div>
   </section>

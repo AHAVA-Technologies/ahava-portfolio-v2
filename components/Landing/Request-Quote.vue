@@ -1,29 +1,34 @@
 <template>
-  <section class="grid min-h-[90vh] grid-cols-7 gap-x-10 items-center">
-    <div class="col-span-4">
+  <section
+    id="request-quote"
+    class="grid min-h-[90vh] grid-cols-1 md:grid-cols-7 gap-x-10 items-center"
+  >
+    <div class="col-span-1 md:col-span-4">
       <div class="pb-3 mb-5 animated_underline">
-        <h5 class="text-xl font-bold uppercase text-primary-600">
+        <h5 class="text-lg font-bold uppercase sm:text-xl text-primary-600">
           Request a Quote
         </h5>
-        <h1 class="mt-3 mb-0 text-4xl font-extrabold text-midnight-950">
+        <h1
+          class="mt-3 mb-0 text-2xl font-extrabold sm:text-3xl md:text-4xl text-midnight-950"
+        >
           Need A Free Quote? Please Feel Free to Contact Us
         </h1>
       </div>
       <div class="mb-3">
         <div class="grid grid-cols-2 zoomIn">
-          <h5 class="mb-3 text-lg font-[500] gap-x-3">
+          <h5 class="mb-3 text-base sm:text-lg font-[500] sm:gap-x-3 gap-x-2">
             <Icon
               name="fa-solid:reply"
-              class="text-2xl font-extrabold text-primary-600"
+              class="text-xl font-extrabold sm:text-2xl text-primary-600"
             />
-            Reply within 24 hours
+            <span> Reply within 24 hours </span>
           </h5>
-          <h5 class="mb-3 text-lg font-[500] gap-x-3">
+          <h5 class="mb-3 text-base sm:text-lg font-[500] gap-x-3">
             <Icon
               name="ic:round-phone"
-              class="text-2xl font-extrabold text-primary-600"
+              class="text-xl font-extrabold sm:text-2xl text-primary-600"
             />
-            24 hrs telephone support
+            <span> 24 hrs telephone support </span>
           </h5>
         </div>
       </div>
@@ -50,7 +55,7 @@
         </div>
       </div>
     </div>
-    <div class="col-span-3">
+    <div class="col-span-1 md:col-span-3">
       <Landing-QuoteForm />
     </div>
   </section>

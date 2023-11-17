@@ -1,25 +1,20 @@
 <template>
   <footer>
     <div
-      class="px-20 mt-5 container-fluid bg-midnight-950 text-primary-50 wow fadeInUp"
+      class="lg:px-20 md:px-10 px-5 mt-5 container-fluid bg-midnight-950 text-primary-50 wow fadeInUp"
       data-wow-delay="0.1s"
     >
       <div class="container">
-        <div class="grid grid-cols-4 gap-x-10">
-          <div class="col-span-1 footer-about">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-x-10">
+          <!-- <div class="col-span-1 footer-about">
             <div
-              class="flex flex-col items-center justify-center h-full p-4 text-center bg-primary-600"
+              class="flex flex-col items-center justify-center h-full p-4 text-center bg-primary-600 md:rounded-none rounded-md md:my-0 my-5"
             >
-              <nuxt-link href="index.html" class="navbar-brand">
-                <nuxt-img
-                  src="img/newLogo.png"
-                  width="80"
-                  class="p-2"
-                  height="80"
-                  alt=""
-                />
-                <h1 class="m-0 text-white">AHAVA</h1>
-              </nuxt-link>
+              <img
+                src="/img/ahava-logo.png"
+                class="w-[180px] h-[100px] object-contain bg-midnight-950"
+                alt="Ahava Digital Solutions Logo"
+              />
               <p class="mt-3 mb-4">
                 Our mission is to develop cutting-edge software solutions that
                 streamline and optimize business processes for organizations
@@ -38,9 +33,9 @@
                 </div>
               </form>
             </div>
-          </div>
-          <div class="col-span-3">
-            <div class="grid grid-cols-3 gap-x-10">
+          </div> -->
+          <div class="md:col-span-4 col-span-1">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-x-10">
               <div class="pt-5 mb-5 col-md-12">
                 <div class="relative pb-3 mb-4 section-title section-title-sm">
                   <h3
@@ -55,11 +50,11 @@
                 </div> -->
                 <div class="flex items-center mb-2 gap-x-2">
                   <Icon name="ic:baseline-email" class="text-primary-600" />
-                  <p class="mb-0">AHAVA@gmail.com</p>
+                  <p class="mb-0">ahavadigitalsolutions@ahava.org</p>
                 </div>
                 <div class="flex items-center mb-2 gap-x-2">
                   <Icon name="solar:phone-bold" class="me-0 text-primary-600" />
-                  <p class="mb-0">+012 345 67890</p>
+                  <p class="mb-0">+251 939 064200</p>
                 </div>
                 <div class="flex gap-x-3">
                   <nuxt-link

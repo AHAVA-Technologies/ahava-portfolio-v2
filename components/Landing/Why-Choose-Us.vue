@@ -1,21 +1,25 @@
 <template>
-  <div class="py-5 container-fluid wow fadeInUp" data-wow-delay="0.1s">
+  <div
+    class="py-5 container-fluid wow fadeInUp"
+    data-wow-delay="0.1s"
+    id="why-choose-up"
+  >
     <div class="container py-5">
       <div
         class="flex flex-col items-center justify-center max-w-md pb-3 mx-auto mb-5 text-center"
       >
-        <h5 class="text-xl font-bold uppercase text-primary-600">
+        <h5 class="text-lg font-bold uppercase sm:text-xl text-primary-600">
           Why Choose Us
         </h5>
-        <h1 class="mb-0 text-4xl font-extrabold">
+        <h1 class="mb-0 text-2xl font-extrabold sm:text-3xl md:text-4xl">
           We Are Here to Grow Your Business Exponentially
         </h1>
         <div class="mx-auto mt-3 w-36 animated_underline"></div>
       </div>
-      <div class="grid grid-cols-3 gap-x-10">
-        <div class="">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-10">
+        <div class="h-full">
           <div class="grid grid-rows-2 gap-y-5">
-            <div class="zoomIn">
+            <div class="h-full zoomIn">
               <div
                 class="flex items-center justify-center mb-3 rounded bg-primary-600"
                 style="width: 60px; height: 60px"
@@ -28,7 +32,7 @@
                 meet your needs and expectations.
               </p>
             </div>
-            <div class="zoomIn">
+            <div class="h-full zoomIn">
               <div
                 class="flex items-center justify-center mb-3 rounded bg-primary-600"
                 style="width: 60px; height: 60px"
@@ -47,7 +51,7 @@
             </div>
           </div>
         </div>
-        <div class="zoomIn" style="min-height: 350px">
+        <div class="hidden zoomIn md:block" style="min-height: 350px">
           <div class="relative h-full">
             <nuxt-img
               class="absolute w-full h-full rounded zoomIn"
@@ -57,9 +61,9 @@
             />
           </div>
         </div>
-        <div>
+        <div class="h-full">
           <div class="grid grid-rows-2 gap-y-5">
-            <div class="zoomIn" data-wow-delay="0.4s">
+            <div class="h-full zoomIn" data-wow-delay="0.4s">
               <div
                 class="flex items-center justify-center mb-3 rounded bg-primary-600"
                 style="width: 60px; height: 60px"
@@ -75,7 +79,7 @@
                 about software development.
               </p>
             </div>
-            <div class="zoomIn" data-wow-delay="0.8s">
+            <div class="h-full zoomIn" data-wow-delay="0.8s">
               <div
                 class="flex items-center justify-center mb-3 rounded bg-primary-600"
                 style="width: 60px; height: 60px"

@@ -1,5 +1,5 @@
 import type { LandingTeamMember } from '#build/components';
-<script setup>
+<script lang="ts" setup>
 defineProps({
   member: {
     type: Object,
@@ -8,10 +8,10 @@ defineProps({
 });
 </script>
 <template>
-  <div class="w-full h-full overflow-hidden rounded bg-primary-50">
+  <div id="team" class="w-full h-full overflow-hidden rounded bg-primary-50">
     <div class="relative w-full overflow-hidden h-[85%]">
       <div
-        class="relative w-full h-full max-h-[450px] overflow-hidden hover:bg-primary-950 bg-opacity-60"
+        class="relative w-full h-full max-h-[450px] aspect-square overflow-hidden hover:bg-primary-950 bg-opacity-60"
       >
         <img
           class="object-cover w-full h-full transition-all duration-300 hover:scale-110"
@@ -43,7 +43,9 @@ defineProps({
       </div>
     </div>
     <div class="py-4 text-center">
-      <h4 class="text-2xl text-primary text-primary-600 font-[700]">
+      <h4
+        class="text-lg sm:text-xl md:text-2xl text-primary text-primary-600 font-[700]"
+      >
         {{ member.name }}
       </h4>
       <p class="m-0 text-base uppercase text-secondary-600">

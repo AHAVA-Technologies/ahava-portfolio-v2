@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div id="quote">
     <div
       class="flex items-center justify-center h-full rounded bg-primary-600 wow zoomIn"
     >
-      <form class="w-2/3 py-10">
+      <form class="w-full px-5 py-10 sm:px-auto sm:w-2/3">
         <div class="flex flex-col gap-y-5">
           <div class="col-xl-12">
             <input
