@@ -30,6 +30,11 @@ const members = ref([
     name: "Yonatan Tesfaye",
     role: "Web Developer",
   },
+    {
+    image: "/img/selamu.jpg",
+    name: "Selamu Dawit",
+    role: "Backend Developer",
+  },
   {
     image: "/img/sami.bmp",
     name: "Samuel Melis",
